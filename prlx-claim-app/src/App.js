@@ -83,6 +83,8 @@ const DropDappComponent = () => {
   return (
     <div>
       <h1>PRLX Token Claim </h1>
+      <input type="file" accept=".txt" onChange={handleWhitelistFileChange} />
+      <button onClick={handleDistributeTokens}>Update Whitelist</button>
       <button onClick={handleClaimTokens}>Claim Tokens</button>
     </div>
   );
